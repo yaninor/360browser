@@ -1,0 +1,147 @@
+.section1>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.text img {
+    margin-right: 30px;
+    opacity: .3;
+}
+.section1.animation .text img {
+    transition: all 1s;
+    margin-right: 0;
+    opacity: 1;
+}
+.section2>div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.shield {
+    width: 500px;
+}
+.shield img:nth-child(3){
+    transform: translate(1000px,1000px) rotate(360deg);
+}
+.shield img {
+    float: left;
+}
+.section2.animation .shield img {
+    transition: all 1s;
+    transform: none;
+}
+.section3>div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.circle {
+    width: 453px;
+    height: 449px;
+    background: url(../images/circle.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle img {
+    transform: translate(-1000px,1000px);
+}
+.section3.animation .circle img {
+    transition:all 1s;
+    transform: none;
+}
+.section4>div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.searchBox {
+    width: 529px;
+    height: 438px;
+}
+.search {
+    width: 529px;
+    height: 66px;
+    background: url(../images/search.png);
+    position: relative;
+    transform: translateX(-1000px);
+}
+.key {
+    height: 22px;
+    width: 0;
+    background: url(../images/key.png);
+    position: absolute;
+    left:20px;
+    top:23px;
+}
+.result {
+    height: 0;
+    background: url(../images/result.png);
+}
+.section4.animation .search {
+    transition: all 1s;
+    transform: none;
+}
+.section4.animation .key {
+    transition: all 1s 1s steps(5);
+    width: 99px;
+}
+.section4.animation .result {
+    transition: all 1s 2s;
+    height: 372px;
+}
+.section5>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+.browser {
+    width: 1008px;
+    flex: 1;
+    position: relative;
+}
+.extra {
+    position: absolute;
+    bottom: 0;
+    right:0;
+}
+.browser .top {
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    top:0;
+    background-color: #fff;
+    transform: translateX(-1800px);
+}
+.browser .right {
+    height: 100%;
+    width: 5px;
+    position: absolute;
+    right:0;
+    background-color: #fff;
+    transform: translateY(-1800px);
+}
+.browser .bottom {
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    bottom:0;
+    background-color: #fff;
+    transform: rotateX(1800px);
+}
+.browser .left {
+    height: 100%;
+    width: 5px;
+    position: absolute;
+    left: 0;
+    background-color: #fff;
+    transform: translateY(1800px);
+}
+.section5.animation .border {
+    transition: all 1s;
+    transform: none;
+}
